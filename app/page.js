@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
 
 const projects=[
-{n:"01",t:"Student Attendance System",d:"Tracks and records daily attendance of students.",tools:["HTML","CSS","JavaScript"]},
-{n:"02",t:"Library Book Management System",d:"Helps organize and manage books in the school library.",tools:["Java","Basic Database"]},
-{n:"03",t:"Personal Portfolio Website",d:"Displays profile, skills, education, and projects.",tools:["Next.js","CSS"]}
+{n:"01",t:"Student Attendance System",d:"A proposed system for tracking and recording daily student attendance.",tools:["HTML","CSS","JavaScript"]},
+{n:"02",t:"Library Book Management System",d:"A proposed system for organizing and managing books in a school library.",tools:["Java","Basic Database"]},
+{n:"03",t:"Personal Portfolio Website",d:"A portfolio project for presenting my profile, skills, education, and project ideas.",tools:["Next.js","CSS"]}
 ];
 const skills=["HTML","CSS","JavaScript","Java","Basic Python","Next.js"];
 const hobbies=["Coding","Exploring new technologies","Building small projects","Solving problems"];
@@ -38,7 +38,7 @@ export default function Home(){return <main>
 </section>
 
 <section id="projects" className={styles.section+" "+styles.darkSection}>
-<div className={styles.sectionTitle}><p>02 / PROJECTS</p><h2>Things I&apos;ve <span>built.</span></h2></div>
+<div className={styles.sectionTitle}><p>02 / PROJECTS</p><h2>Projects I&apos;m <span>working on.</span></h2></div>
 <div className={styles.projects}>{projects.map(p=><article className={styles.project} key={p.n}><div className={styles.projectTop}><span>{p.n}</span><b>↗</b></div><h3>{p.t}</h3><p>{p.d}</p><div className={styles.tags}>{p.tools.map(x=><span key={x}>{x}</span>)}</div></article>)}</div>
 </section>
 

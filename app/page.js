@@ -38,7 +38,7 @@ export default function Home(){return <main>
 </section>
 
 <section id="projects" className={styles.section+" "+styles.darkSection}>
-<div className={styles.sectionTitle}><p>02 / PROJECTS</p><h2>Projects <span>in progress.</span></h2></div>
+<div className={styles.sectionTitle}><p>02 / PROJECTS</p><h2>My <span>projects.</span></h2></div>
 <div className={styles.projects}>{projects.map(p=><article className={styles.project} key={p.n}><div className={styles.projectTop}><span>{p.n}</span><b>↗</b></div><h3>{p.t}</h3><p>{p.d}</p><div className={styles.tags}>{p.tools.map(x=><span key={x}>{x}</span>)}</div></article>)}</div>
 </section>
 
